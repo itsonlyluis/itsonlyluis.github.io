@@ -25,6 +25,9 @@
 		<a-scene embedded arjs='sourceType: webcam; debugUIEnabled: true; detectionMode: mono_and_matrix; matrixCodeType: 3x3; markersAreaEnabled=true;'>
 
 			<a-assets>
+				<a-asset-item id="earth-obj" src="/earth/earth.obj"></a-asset-item>
+				<a-asset-item id="earth-mtl" src="/earth/earth.mtl"></a-asset-item>
+				
 				<a-asset-item id="shuttle-obj" src="/test/shuttle.obj"></a-asset-item>
 				<a-asset-item id="diamond-obj" src="/test/diamond.obj"></a-asset-item>
 				<a-asset-item id="generic-mtl" src="/test/vp.mtl"></a-asset-item>
@@ -62,8 +65,13 @@
 			
 			
 			
+<!--
 			<a-marker type="barcode" value='22' registerevents>
 				<a-box position='0 0.5 0' material='color: lavender;'></a-box>
+			</a-marker>
+			
+			<a-marker type="barcode" value='23' registerevents>
+				<a-entity  obj-model="obj: #earth-obj;  mtl: #earth-mtl"></a-entity>
 			</a-marker>
 			
 			<a-marker type="barcode" value='26' registerevents>
@@ -77,6 +85,7 @@
 			<a-marker type="barcode" value='37' registerevents>
 				<a-entity  obj-model="obj: #diamond-obj;  mtl: #generic-mtl"></a-entity>
 			</a-marker>
+-->
 			
 			<a-entity camera></a-entity>
 
